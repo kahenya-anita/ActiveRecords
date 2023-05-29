@@ -1,0 +1,10 @@
+<!--View a list of users--->
+
+<h1>Users</h1>
+<ul>
+    <% @users.each do |user|%>
+        <li>
+            <%=user.name%>,<%=user.email%>,<%=user.age%>
+        </li>
+    <%end%>
+</ul>
